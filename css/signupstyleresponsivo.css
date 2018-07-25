@@ -1,0 +1,187 @@
+body{
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  font-size: 25px;
+  padding: 0;
+  position: relative;
+  font-weight: 800;
+  line-height: 2px;
+}
+
+p{
+  font-size: 14px;
+  font-family: Lato;
+}
+
+a{
+  color: #842005;
+}
+
+input{
+  outline: none;
+}
+
+select{
+  outline: none;
+}
+
+#background{
+  background: url("../resources/backgroundcoverofficial.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+.square{
+  background-color: #ffffff;
+  height: auto;
+  width: 300px;
+  border-radius: 5px;
+  padding: 50px;
+  margin: auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+form{
+  position: relative;
+}
+
+input[type=text]{
+  background-color: transparent;
+  width: 300px;
+  height: 30px;
+  border: 0;
+  border-bottom: 3px solid #f2f2f2;
+  font-family: Lato;
+  font-style: italic;
+}
+
+input[type=password]{
+  background-color: transparent;
+  width: 300px;
+  height: 30px;
+  border: 0;
+  border-bottom: 3px solid #f2f2f2;
+  font-family: Lato;
+  font-style: italic;
+}
+
+select{
+  background-color: transparent;
+  width: 300px;
+  height: 30px;
+  border: 0;
+  border-bottom: 3px solid #f2f2f2;
+  font-family: Lato;
+  font-style: italic;
+}
+
+input[type=submit]{
+  background-color: transparent;
+  width: 300px;
+  height: 50px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #b1040e;
+  font-family: Lato;
+  font-weight: bolder;
+  color: white;
+}
+
+input[type=submit]:focus{
+  background-color: #8B0000;
+}
+
+input[type=submit]:hover{
+  background-color: #8B0000;
+}
+
+input[type=text]:focus{
+  border-bottom: 2px solid #b1040e;
+}
+
+input[type=password]:focus{
+  border-bottom: 2px solid #b1040e;
+}
+
+select:focus{
+  border-bottom: 2px solid #b1040e;
+}
+
+#schgrd{
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #background{
+    background: none;
+  }
+
+  .container{
+    padding: 40px;
+    position: relative;
+    border: 0;
+    margin-bottom: 28px;
+  }
+
+  .square{
+    width: 80%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  input[type=submit]{
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #b1040e;
+    font-family: Lato;
+    font-weight: bolder;
+    color: white;
+  }
+
+  select{
+    background-color: transparent;
+    width: 100%;
+    height: 30px;
+    border: 0;
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  input[type=password]{
+    background-color: transparent;
+    width: 100%;
+    height: 30px;
+    border: 0;
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  input[type=text]{
+    background-color: transparent;
+    width: 100%;
+    height: 30px;
+    border: 0;
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  form{
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,240 @@
+body{
+  font-family: Lato;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  background-color: #f2f2f2;
+}
+
+header{
+  background-color: #b1040e;
+  width: 100%;
+  height: 75px;
+}
+
+.headercontainer{
+  width: 80%;
+  padding: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0;
+  height: 75px;
+}
+
+#logo{
+  width: 230px;
+  height: 130px;
+  background: cover;
+  position: absolute;
+  left: 0;
+  top: -20px;
+}
+
+.php{
+  position: absolute;
+  right: 50px;
+  top: 10px;
+}
+
+.session{
+  right: 0;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  font-style: italic;
+}
+
+.uploadphoto{
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    z-index: -3;
+}
+
+.buttonarea{
+  position: absolute;
+  transform: translate(-50%, 75px);
+  left: 50%;
+  top: 80px;
+}
+
+.button {
+  outline: none;
+  border-radius: 4px;
+  background-color: #b1040e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 200px;
+  height: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  display: inline;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.border{
+  background-color: #b1040e;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 5px;
+}
+
+.container{
+  width: 90%;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  height: auto;
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 50%;
+}
+
+.infobox{
+  background-color: #ffffff;
+  width: 100%;
+  height: 250px;
+  position: relative;
+  border-radius: 5px;
+  left: 0;
+}
+
+.postbox{
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
+  top: 20px;
+  position: relative;
+  border-radius: 5px;
+  right: 0;
+}
+
+.infoboxcontainer{
+  width: 90%;
+  height: auto;
+  padding: 30px;
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 50%;
+}
+
+.postboxcontainer{
+  width: 90%;
+  height: auto;
+  padding: 30px;
+  position: relative;
+  transform: translate(-50%, 0);
+  left: 50%;
+}
+
+h1{
+  font-family: Lato;
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+p{
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+br{
+  display: block;
+  margin: 10px 0;
+}
+
+textarea{
+  width: 96%;
+  height: 50px;
+  resize: none;
+  border-radius: 5px;
+  font-family: Lato;
+  font-weight: 400;
+  padding: 12px 20px;
+  outline: none;
+
+}
+
+input[type="submit"]{
+  width: 300px;
+  height: 45px;
+  border-radius: 5px;
+  border-color: transparent;
+  background-color: #b1040e;
+  font-family: Lato;
+  font-size: 16px;
+  color: #ffffff;
+  outline: none;
+}
+
+input[type="submit"]:hover{
+  width: 300px;
+  height: 45px;
+  border-radius: 5px;
+  border-color: transparent;
+  background-color: #870000;
+  font-family: Lato;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+form{
+  position: relative;
+}
+
+.post{
+  width: 90%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  height: auto;
+  position: relative;
+  top: 50px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.poststext{
+  font-family: Lato;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 17px;
+}
+
+.poststimeline{
+  position: relative;
+}

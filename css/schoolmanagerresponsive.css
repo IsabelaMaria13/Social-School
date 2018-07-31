@@ -238,3 +238,22 @@ form{
 .poststimeline{
   position: relative;
 }
+
+#lobutt{
+  width: 300px;
+  height: auto;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  background-color: #500000;
+  border: 0;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  font-family: Lato;
+  font-weight: bolder;
+  margin: 0px;
+  margin-right: 20px;
+  margin-left: 5px;
+}

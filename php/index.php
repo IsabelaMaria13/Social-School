@@ -10,11 +10,6 @@
 
 <body>
   <header>
-    <?php
-    if(isset($_SESSION['us_username'])){
-      echo '<a href="../php/logout.php"> <input id="lobutt" type="submit" name="logout" value="LOGOUT"> </a>';
-    }
-    ?>
   </header>
   <div id="mainbackground">
     <div class="containerheader">

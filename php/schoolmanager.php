@@ -1,4 +1,8 @@
-<?php session_start() ?>
+<?php 
+  session_start();
+  $upload = false; 
+  $fisier = "";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,21 +12,30 @@
   <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 
-<header>
+<header >
   <div class="headercontainer">
     <div> <img id="logo" src="../resources/Logo/logo official.png"> </div>
     <div class="php">
       <?php
         $usn = $_SESSION['us_username'];
-        echo '<div class="session"> <p>' .$usn. '</p> </div>';
+        echo '<div class="session"> ' .$usn. ' <a href="../php/logout.php"> <input id="lobutt" type="submit" name="logout" value="LOGOUT"> </a> </div>';
       ?>
     </div>
   </div>
 </header>
-<body>
+
+
+<body style='background-image: url("../resources/poza.jpg");'>
   <div class="uploadphoto"> </div>
   <div class="buttonarea">
-    <button class="button"> <span> UPLOAD </span> </button>
+  
+  <form action="uploads.php" method='POST' enctype="multipart/form-data">
+        <input type='file' name='file'>
+        <button type='submit' class='button' name='submit'><span>UPLOAD</span></button>  
+      </form>
+
+  
+    
   </div>
   <div class="border"> </div>
   <div class="container">

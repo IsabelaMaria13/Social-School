@@ -14,7 +14,7 @@
     <div class="php">
       <?php
         $usn = $_SESSION['us_username'];
-        echo '<div class="session"> <p>' .$usn. '</p> </div>';
+        echo '<div class="session"> ' .$usn.  ' <a href="../php/logout.php"> <input id="lobutt" type="submit" name="logout" value="LOGOUT"> </a> </div>';
       ?>
     </div>
   </div>
@@ -28,8 +28,8 @@
         <h1> Profile info <h1>
         <div class="info">
           <p class="pgpadd"> School Name: <?php echo $_SESSION['us_school'] ?> </p>
-          <p class="pgpadd"> School Manager: <?php echo $_SESSION['us_username'] ?> </p>
-          <p class="pgpadd"> School Manager Contact: <?php echo $_SESSION['us_email'] ?> </p>
+          <p class="pgpadd"> Student Name: <?php echo $_SESSION['us_username'] ?> </p>
+          <p class="pgpadd"> Student Contact: <?php echo $_SESSION['us_email'] ?> </p>
           <p class="pgpadd"> User Type: <?php echo $_SESSION['us_type'] ?> </p>
         </div>
       </div>
